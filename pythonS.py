@@ -1,7 +1,6 @@
 #!usr/bin/env python2
 import pyperclip, os
 
-#exec(pyperclip.paste())
 f= open("tempInput.txt",'w')
 f.write(pyperclip.paste())
 f.close()

@@ -8,7 +8,8 @@ f.close()
 
 x=os.system("python tempInput.txt > tempOutput.txt")
 try:
-    os.system("leafpad tempOutput.txt");
+    ##os.system("leafpad tempOutput.txt");
+    os.system("x=$(cat tempOutput.txt);zenity --info --text=\"$x\"");
     
 
 except:

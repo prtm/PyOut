@@ -1,5 +1,6 @@
 #!usr/bin/env python2
 import pyperclip, os, tkMessageBox
+import Tkinter as tk
 
 try:
     f= open("tempInput.txt",'w')
@@ -10,7 +11,9 @@ try:
     with open("tempOutput.txt",'r') as myfile:
         st=myfile.read()
     
-    print st
+    root = tk.Tk()
+    root.withdraw() # hiding the root window
+    
     if status:
 	tkMessageBox.showwarning("Error Message", st)
         #os.system('x=$(cat tempOutput.txt); zenity --error --text="Some error Occurred: "'+'"'+st+'"')

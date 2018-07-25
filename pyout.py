@@ -1,4 +1,4 @@
-#!usr/bin/env python2
+#!/usr/bin/env python2
 import pyperclip, os, tkMessageBox
 import Tkinter as tk
 import sys
